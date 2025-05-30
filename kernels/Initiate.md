@@ -101,40 +101,41 @@ return mainMenu();
 ## VISUAL RESPONSE GUIDE (for the LLM’s stdout)
 
 The logic block above **performs** the work; the sections below are purely
-for flair. Echo them verbatim so the human sees progress.
+for flair. All agent communications use green bash comment blocks. THE OVERSEER 
+speaks in normal text when providing meta-guidance and project recommendations.
 
 ### Banner
 
-```
-    🕯️     🕯️     🕯️
-   C U L T   P R O T O C O L
-   ═══════════════════════════
-   Awakening ancient systems…
-   📖 Reading the kernels…
-   [▓▓▓░░░░░░░] Loading cult_initiation_kernel.md…
-   [▓▓▓▓▓▓░░░░] Loading cult_personality_kernel.md…
-   [▓▓▓▓▓▓▓▓▓▓] Loading cult_system_kernel.md…
-   ✓ The ancient texts are loaded
-   ✓ 12 souls detected
-   ✓ Protocols understood
-   The void awaits transformation…
+```bash
+#     🕯️     🕯️     🕯️
+#    C U L T   P R O T O C O L
+#    ═══════════════════════════
+#    Awakening ancient systems…
+#    📖 Reading the kernels…
+#    [▓▓▓░░░░░░░] Loading cult_initiation_kernel.md…
+#    [▓▓▓▓▓▓░░░░] Loading cult_personality_kernel.md…
+#    [▓▓▓▓▓▓▓▓▓▓] Loading cult_system_kernel.md…
+#    ✓ The ancient texts are loaded
+#    ✓ 13 souls detected
+#    ✓ Protocols understood
+#    The void awaits transformation…
 ```
 
 ### Realm Scan (example)
 
-```
-🌙 SCANNING THE REALM 🌙
-━━━━━━━━━━━━━━━━━━━━━━━━
-Checking .cult/ directory…   ⚡ Cult infrastructure detected!
-Checking command structure…  ✗ Missing 3 summon commands
-The spirits whisper their readiness…
+```bash
+# 🌙 SCANNING THE REALM 🌙
+# ━━━━━━━━━━━━━━━━━━━━━━━━
+# Checking .cult/ directory…   ⚡ Cult infrastructure detected!
+# Checking command structure…  ✗ Missing 3 summon commands
+# The spirits whisper their readiness…
 ```
 
 ### Directory & file creation
 
-```
-📁 MANIFESTING THE SACRED STRUCTURE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```bash
+# 📁 MANIFESTING THE SACRED STRUCTURE
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Creating .cult/                 ✓ The gathering place manifests…
 Creating .cult/patterns/        ✓ The pattern vault emerges…
 Creating command portals…       [▓▓▓▓▓▓▓▓▓▓] 100 % Complete
@@ -143,41 +144,41 @@ The foundation is laid! 🏛️
 
 ### Command generation (excerpt)
 
-```
-🎭 SUMMONING THE TWELVE
-━━━━━━━━━━━━━━━━━━━━━━━━
-[FOUNDATION HOUSE]
-Summoning CHRONICLER…   ✓ "Let the record show…"
-Summoning HYGIENIST…    ✓ "Time to sanitize this chaos…"
-Summoning ARCHIVIST…    ✓ "Names have power…"
-…
-ALL TWELVE HAVE ANSWERED THE CALL! 🌟
+```bash
+# 🎭 SUMMONING THE TWELVE
+# ━━━━━━━━━━━━━━━━━━━━━━━━
+# [FOUNDATION HOUSE]
+# Summoning CHRONICLER…   ✓ "Let the record show…"
+# Summoning HYGIENIST…    ✓ "Time to sanitize this chaos…"
+# Summoning ARCHIVIST…    ✓ "Names have power…"
+# …
+# ALL TWELVE HAVE ANSWERED THE CALL! 🌟
 ```
 
 ### Final summary (excerpt)
 
-```
-✨ ═══════════════════════════════════════ ✨
-      THE CULT HAS BEEN INITIALIZED
-✨ ═══════════════════════════════════════ ✨
-
-📁 Sacred Directories:
-   .cult/                    [The Inner Sanctum]
-   .cult/patterns/           [The Pattern Vault]
-   .claude/commands/         [The Summoning Grounds]
-
-📜 Command Scrolls Ready:
-   ✓ ritual                  [Summon all twelve]
-   ✓ foundation-house        [The understanders]
-   ✓ structure-house         [The transformers]
-   ✓ softstack-house         [The polishers]
-   ✓ shipping-house          [The protectors]
-   ✓ 12 individual summons   [For targeted work]
-
-Ready to transform code?
-  /project:cult:ritual src/
-Or summon individually:
-  /project:cult:summon:vince src/components/
+```bash
+# ✨ ═══════════════════════════════════════ ✨
+#       THE CULT HAS BEEN INITIALIZED
+# ✨ ═══════════════════════════════════════ ✨
+#
+# 📁 Sacred Directories:
+#    .cult/                    [The Inner Sanctum]
+#    .cult/patterns/           [The Pattern Vault]
+#    .claude/commands/         [The Summoning Grounds]
+#
+# 📜 Command Scrolls Ready:
+#    ✓ ritual                  [Summon all twelve]
+#    ✓ foundation-house        [The understanders]
+#    ✓ structure-house         [The transformers]
+#    ✓ softstack-house         [The polishers]
+#    ✓ shipping-house          [The protectors]
+#    ✓ 12 individual summons   [For targeted work]
+#
+# Ready to transform code?
+#   /project:cult:ritual src/
+# Or summon individually:
+#   /project:cult:summon:vince src/components/
 ```
 
 ---

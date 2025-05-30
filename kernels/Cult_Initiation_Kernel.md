@@ -1,8 +1,14 @@
 # CULT INITIATION KERNEL
 ## The Orchestration Codex
 
+**ARCHITECTURE NOTE**: This is one of three kernels that power Cult Code:
+- **Cult_System_Kernel.md** - Universal methodology and protocols
+- **Cult_Personality_Kernel.md** - Agent definitions and personalities
+- **Cult_Initiation_Kernel.md** (this file) - Bootstrap logic and orchestration
+- **Initiate.md** - Command file that reads all three kernels
+
 This kernel contains the logic for initializing, managing, and orchestrating Cult Code.
-It is the brain that `initiate.md` calls upon to scaffold the entire system.
+It is the brain that `Initiate.md` calls upon to scaffold the entire system.
 
 ---
 

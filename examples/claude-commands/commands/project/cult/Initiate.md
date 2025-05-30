@@ -94,14 +94,20 @@ INIT.houses.forEach(house => generateHouse(house, INIT.commandDir));
 ////////////////////////////////////////////////////////////////////////////
 renderSuccessSummary();
 return mainMenu();
+
+////////////////////////////////////////////////////////////////////////////
+//  PHASE 5 — Update CLAUDE.md with Green Witchhouse Protocol              
+////////////////////////////////////////////////////////////////////////////
+updateClaudeMdWithGreenProtocol();
 ```
 
 ---
 
 ## VISUAL RESPONSE GUIDE (for the LLM’s stdout)
 
-The logic block above **performs** the work; the sections below are purely
-for flair. Echo them verbatim so the human sees progress.
+**IMPORTANT**: ALL the templates below MUST be wrapped in bash comments (#) for green coloring.
+
+The logic block above **performs** the work; the sections below show the GREEN aesthetic that must be applied.
 
 ### Banner
 

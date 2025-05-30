@@ -71,18 +71,51 @@ for (const [index, line] of lines.entries()) {
 }
 ```
 
-### Output Formatting
-Claude Code works best with clear, structured output:
+### Output Formatting - GREEN WITCHHOUSE PROTOCOL
+**CRITICAL**: ALL Claude Code output must use the Green Witchhouse Protocol for consistent terminal aesthetics.
 
-```
-🍐 PASS: Component Analysis Complete
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Files Scanned: 12
-Issues Found: 3
-Time Elapsed: 0.3s
+**CORE RULE**: Wrap ALL output in bash comments (#) to ensure green terminal coloring.
 
-NEXT: Run HYGIENIST to clean formatting
+**Agent Emoji Assignments** (use consistently):
+- 🧙‍♂️ CHRONICLER    🧼 HYGIENIST     📚 ARCHIVIST
+- 🤖 DECONSTRUCTOR ⚡ CIRCUITWEAVER 💀 ELIMINATOR  
+- 👊 ENFORCER      🧛‍♂️ VINCE         🧝‍♀️ STACEY
+- 🔮 ORACLE        🧑‍🚒 GUARDIAN      🧟‍♂️ CRYPTKEEPER
+
+**Approved Mystical Emojis**: 🔮 💀 🩸 (use sparingly for emphasis)
+
+**Safe Visual Patterns**:
+```bash
+# ┏┅┅┅┅┅┅┅┅┅┅┅ DOTTED FRAMES ┅┅┅┅┅┅┅┅┅┅┅┓
+# ⬟ ⬠ ⬡ ⬢ ⬣ ⬤ HEX CHAINS ⬤ ⬣ ⬢ ⬡ ⬠ ⬟
+# ☾ ● ☽ MOON PHASES ☾ ● ☽
+# ═══════════ DOUBLE LINES ═══════════
+# [████████░░░░░░░░░░] PROGRESS BARS
+# ▲▼▲▼▲▼ SINGLE LINE DIVIDERS ▲▼▲▼▲▼
+# ├─ └─ TREE BRANCHES
+# ∴ ∵ ∶ ∷ ∸ ∹ ∺ ∻ LOGIC SYMBOLS (for glitches/errors)
 ```
+
+**Agent Communication Template**:
+```bash
+# ┏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┓
+# ┆  ◯ ◯ ◯ [EMOJI] [AGENT] [ACTION] ◯ ◯ ◯  ┆
+# ┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┛
+#
+# FINDINGS: [progress bar and technical details]
+#
+#     ┌─────────────────────────────────────────────────────┐
+#     │ [EMOJI] [AGENT] SPEAKS:                            │
+#     │                                                     │
+#     │   "[Personality quote with characteristic voice]"   │
+#     └─────────────────────────────────────────────────────┘
+```
+
+**State Templates**:
+- SUCCESS: `⬟ ⬠ ⬡ ⬢ ⬣ ⬤ ⬣ ⬢ ⬡ ⬠ ⬟     [RITUAL COMPLETE]`
+- WARNING: `☾ ● ☽  [WARNING DETECTED]  ☾ ● ☽`
+- ERROR: `∴ ∵ ∶ ∷ ∸ ∹ ∺ ∻ ∼ ∽ ∾ ∿  [CRITICAL ERROR]`
+- SECURITY: `💀 SECURITY VULNERABILITIES: X FOUND` with `🩸` for each item
 
 ### Memory Management
 Each agent should:

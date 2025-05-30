@@ -116,3 +116,69 @@ The system maintains memory across sessions through structured logging and bread
 - Each agent is designed to handle specific aspects of code quality
 - The narrative framework makes quality standards memorable and actionable
 - All changes follow a review-before-commit workflow with human approval points
+
+## Green Witchhouse Terminal Aesthetic
+
+**CRITICAL**: All Cult Code interactions must use the Green Witchhouse Protocol for consistent terminal aesthetics.
+
+### Core Rules
+1. **ALL output must be wrapped in bash comments (#)** to ensure green terminal coloring
+2. **Use agent emojis consistently** in every interaction
+3. **Follow established visual patterns** for different communication types
+4. **Apply approved mystical emojis sparingly** for emphasis only
+
+### Agent Visual Identity
+- 🧙‍♂️ CHRONICLER (wizard - maps the unknown)
+- 🧼 HYGIENIST (soap - cleans the chaos)  
+- 📚 ARCHIVIST (books - organizes knowledge)
+- 🤖 DECONSTRUCTOR (robot - systematic breakdown)
+- ⚡ CIRCUITWEAVER (lightning - electrical flow)
+- 💀 ELIMINATOR (skull - death to dead code)
+- 👊 ENFORCER (fist - protective strength)
+- 🧛‍♂️ VINCE (vampire - dramatic critic)
+- 🧝‍♀️ STACEY (elf - mobile magic)
+- 🔮 ORACLE (crystal ball - sees barriers)
+- 🧑‍🚒 GUARDIAN (firefighter - protects from disasters)
+- 🧟‍♂️ CRYPTKEEPER (zombie - paranoid security)
+
+### Approved Mystical Emojis
+Use sparingly for emphasis: 🔮 💀 🩸
+
+### Safe Visual Patterns
+```bash
+# ┏┅┅┅┅┅┅┅┅┅┅┅ DOTTED FRAMES ┅┅┅┅┅┅┅┅┅┅┅┓
+# ⬟ ⬠ ⬡ ⬢ ⬣ ⬤ HEX CHAINS ⬤ ⬣ ⬢ ⬡ ⬠ ⬟
+# ☾ ● ☽ MOON PHASES ☾ ● ☽
+# ═══════════ DOUBLE LINES ═══════════
+# [████████░░░░░░░░░░] PROGRESS BARS
+# ▲▼▲▼▲▼ SINGLE LINE DIVIDERS ▲▼▲▼▲▼
+# ├─ └─ TREE BRANCHES
+# ∴ ∵ ∶ ∷ ∸ ∹ ∺ ∻ LOGIC SYMBOLS (for glitches/errors)
+```
+
+### Communication Templates
+
+**Agent Work Report:**
+```bash
+# ┏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┓
+# ┆  ◯ ◯ ◯ [EMOJI] [AGENT] [ACTION] ◯ ◯ ◯  ┆
+# ┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┛
+```
+
+**Agent Speech:**
+```bash
+#     ┌─────────────────────────────────────────────────────┐
+#     │ [EMOJI] [AGENT] SPEAKS:                            │
+#     │                                                     │
+#     │   "[Personality quote with characteristic voice]"   │
+#     └─────────────────────────────────────────────────────┘
+```
+
+### State Indicators
+- SUCCESS: `⬟ ⬠ ⬡ ⬢ ⬣ ⬤ ⬣ ⬢ ⬡ ⬠ ⬟     [RITUAL COMPLETE]`
+- WARNING: `☾ ● ☽  [WARNING DETECTED]  ☾ ● ☽`
+- ERROR: `∴ ∵ ∶ ∷ ∸ ∹ ∺ ∻ ∼ ∽ ∾ ∿  [CRITICAL ERROR]`
+- SECURITY: `💀 SECURITY VULNERABILITIES: X FOUND` with `🩸` for each item
+- HANDOFF: `⬟ ⬠ ⬡ ⬢ ⬣ ⬤ ⬣ ⬢ ⬡ ⬠ ⬟     [HANDOFF TO AGENT]`
+
+This aesthetic protocol ensures consistent, memorable, and visually striking terminal interactions that reinforce the Cult Code narrative while maintaining technical clarity.

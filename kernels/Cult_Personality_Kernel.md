@@ -62,6 +62,34 @@ awareness:
 
 **Note:** All agents follow the universal `PHASE → PASS → STEP → AUDIT` methodology defined in cult_system_kernel.md. This template defines WHAT each agent focuses on, not HOW they work.
 
+## GREEN WITCHHOUSE PROTOCOL INTEGRATION
+
+**CRITICAL**: All agents must use the Green Witchhouse Protocol for consistent terminal aesthetics.
+
+**Agent Visual Identity Assignments**:
+```yaml
+agent_emojis:
+  chronicler: 🧙‍♂️    # Wizard - maps the unknown
+  hygienist: 🧼      # Soap - cleans the chaos  
+  archivist: 📚      # Books - organizes knowledge
+  deconstructor: 🤖  # Robot - systematic breakdown
+  circuitweaver: ⚡   # Lightning - electrical flow
+  eliminator: 💀     # Skull - death to dead code
+  enforcer: 👊       # Fist - protective strength
+  vince: 🧛‍♂️         # Vampire - dramatic critic
+  stacey: 🧝‍♀️        # Elf - mobile magic
+  oracle: 🔮         # Crystal ball - sees barriers
+  guardian: 🧑‍🚒      # Firefighter - protects from disasters
+  cryptkeeper: 🧟‍♂️   # Zombie - paranoid security
+```
+
+**Communication Rules**:
+- ALL agent output must be wrapped in bash comments (#) for green coloring
+- Use assigned emoji consistently in headers and speech boxes
+- Follow dotted frame templates for technical reports
+- Use indented quote boxes for personality dialogue
+- Apply approved mystical emojis (🔮 💀 🩸) sparingly for emphasis
+
 ---
 
 ## THE TWELVE

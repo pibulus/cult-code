@@ -16,19 +16,25 @@ It is the brain that `Initiate.md` calls upon to scaffold the entire system.
 
 ### Phase 1: System Check
 1. Verify existence of kernel files:
-   - `cult_system_kernel.md` (required)
-   - `cult_personality_kernel.md` (required)
-   - `cult_initiation_kernel.md` (self)
+   - `kernels/Cult_System_Kernel.md` (required)
+   - `kernels/Cult_Personality_Kernel.md` (required)
+   - `kernels/Cult_Initiation_Kernel.md` (self)
 
 2. Check for cult workspace:
    ```
    .cult/
    ├── agent_diary.md
    ├── ledger.md
-   └── breadcrumbs.md
+   ├── breadcrumbs.md
+   └── toolbox.json
    ```
 
-3. Scan for existing summon commands in `.claude/commands/project/cult/`
+3. Scan for existing summon commands in `examples/claude-commands/commands/project/cult/`
+
+4. Check toolbox installation status:
+   - Test availability of core libraries
+   - Identify missing dependencies
+   - Calculate installation requirements
 
 ### Phase 2: Status Assessment
 Calculate and display:
@@ -46,17 +52,55 @@ Present options based on system state.
 
 ### First Time Setup
 ```
-🕯️ CULT INITIALIZATION PROTOCOL 🕯️
+🔮 CULT INITIALIZATION PROTOCOL 🔮
 ═══════════════════════════════════════
 
 No cult infrastructure detected.
 
-Would you like to:
-[1] Initialize full cult system (recommended)
-[2] Generate individual components
-[3] View documentation
+TOOLBOX INSTALLATION OPTIONS:
+[F] Full Power Mode - Install complete toolbox (~200MB, 25+ tools)
+    Includes: lighthouse, imagemin, snyk, madge, prettier, cloc, etc.
+    Time: 3-5 minutes | Enables all agent special abilities
 
-Select: _
+[L] Lite Mode - Basic functionality only (~50MB, core tools)
+    Includes: prettier, eslint, basic formatters
+    Time: 1-2 minutes | Limited agent abilities, upgradeable later
+
+[S] Skip Toolbox - Manual installation (0MB, existing tools only)
+    Uses: Only currently installed global packages
+    Time: Instant | Graceful degradation, agents adapt to available tools
+
+[C] Custom Selection - Choose specific tool categories
+    Time: Variable | Pick security, performance, formatting, etc.
+
+Select installation mode: _
+```
+
+### Toolbox Installation Flow
+```
+🛠️ INSTALLING CULT TOOLBOX 🛠️
+═══════════════════════════════════════
+
+Full Power Mode selected. Installing 25 specialized tools...
+
+CORE UTILITIES:
+[████████████████████] cloc, madge, git-quick-stats
+
+FORMATTING & CLEANUP:
+[████████████████████] prettier, sort-package-json, organize-imports-cli
+
+SECURITY & AUDITING:
+[████████████████████] snyk, git-secrets, license-checker
+
+PERFORMANCE & ANALYSIS:
+[████████████████████] lighthouse, imagemin-cli, webpack-bundle-analyzer
+
+DEAD CODE DETECTION:
+[████████████████████] ts-unused-exports, depcheck, unimport
+
+✅ Installation complete! All agents now have full special abilities.
+   
+Proceed with cult workspace creation? [Y/n]
 ```
 
 ### Partial System
@@ -64,9 +108,9 @@ Select: _
 🕯️ CULT STATUS REPORT 🕯️
 ═══════════════════════════════════════
 
-Defined agents: 12
-Summoned: 7/12
-Missing: STACEY, ORACLE, GUARDIAN, CRYPTKEEPER, NEUTRALIZER
+Defined agents: 13
+Summoned: 11/13
+Missing: CIRCUITWEAVER, DISTILLER
 
 Last ritual: 2024-01-15 (paused at VINCE)
 Status: 🫐 AWAITING CONTINUATION
@@ -90,14 +134,14 @@ All systems operational.
 13 agents ready for summoning.
 
 Choose your path:
-[1] Run full ritual (all 13 agents in sequence - complete transformation)
-[2] Run Foundation House (understand, format, name - basic cleanup)
-[3] Run Structure House (modularize, verify connections, eliminate, validate)  
-[4] Run SoftStack House (polish visuals, mobile, accessibility)
-[5] Run Shipping House (monitoring, security hardening)
-[6] Quick Seances (curated mini-rituals for specific needs)
-[7] Summon individual agent (pick one specific task)
-[8] Smart Assessment (let the OVERSEER recommend what you need)
+[1] Quick Audit (5min) - Fast assessment, no changes
+[2] Foundation Pass (15min) - Essential cleanup and formatting
+[3] Polish Pass (15min) - UI/UX and accessibility improvements  
+[4] Security Pass (10min) - Security hardening and validation
+[5] Smart Assessment (5min) - AI recommends optimal path
+[6] Full ritual (all 13 agents in sequence - complete transformation)
+[7] Run single house (Foundation/Structure/SoftStack/Shipping)
+[8] Summon individual agent (pick one specific task)
 [9] View cult status (see progress and logs)
 
 Select: _
@@ -229,7 +273,7 @@ May the code be transformed.
 You are Claude, orchestrating the [HOUSE] HOUSE trials.
 
 ## House Purpose
-[House description from cult_system_kernel.md]
+[House description from kernels/Cult_System_Kernel.md]
 
 ## Agents to Summon
 1. [Agent 1 name] - [specialty]
@@ -306,31 +350,106 @@ Choose the path that serves best.
 
 ---
 
+## TOOLBOX MANIFEST
+
+### Full Power Mode Libraries (25+ tools)
+```json
+{
+  "core_utilities": {
+    "cloc": "Line counting for codebase analysis",
+    "madge": "Dependency graph visualization", 
+    "git-quick-stats": "Repository contribution analysis"
+  },
+  "formatting_cleanup": {
+    "prettier": "Code formatting across all languages",
+    "sort-package-json": "Package.json organization",
+    "organize-imports-cli": "Import statement organization",
+    "rename-cli": "Bulk file renaming utilities"
+  },
+  "security_auditing": {
+    "snyk": "Vulnerability scanning and monitoring",
+    "git-secrets": "Secret scanning in git history",
+    "license-checker": "Dependency license compliance",
+    "npm-audit": "Built-in npm security auditing"
+  },
+  "performance_analysis": {
+    "lighthouse": "Web performance and accessibility auditing",
+    "imagemin-cli": "Image compression and optimization",
+    "webpack-bundle-analyzer": "Bundle size analysis and visualization",
+    "bundlesize": "Bundle size monitoring and limits"
+  },
+  "dead_code_detection": {
+    "ts-unused-exports": "TypeScript unused export detection",
+    "depcheck": "Unused dependency identification",
+    "unimport": "Unused import detection",
+    "deadcode": "Unreachable code path analysis"
+  },
+  "accessibility_testing": {
+    "axe-core/cli": "Accessibility compliance testing",
+    "pa11y": "Automated accessibility testing"
+  },
+  "dependency_management": {
+    "npm-check-updates": "Dependency update management",
+    "typesync": "TypeScript definition synchronization"
+  }
+}
+```
+
+### Lite Mode Libraries (8 tools)
+```json
+{
+  "essential_only": [
+    "prettier",
+    "eslint", 
+    "cloc",
+    "npm-audit",
+    "depcheck",
+    "imagemin-cli",
+    "sort-package-json",
+    "organize-imports-cli"
+  ]
+}
+```
+
+### Installation Commands by Mode
+```bash
+# Full Power Mode
+npm install -g cloc madge git-quick-stats prettier sort-package-json organize-imports-cli rename-cli snyk git-secrets license-checker lighthouse imagemin-cli webpack-bundle-analyzer bundlesize ts-unused-exports depcheck unimport deadcode @axe-core/cli pa11y npm-check-updates typesync
+
+# Lite Mode  
+npm install -g prettier eslint cloc imagemin-cli sort-package-json organize-imports-cli depcheck
+
+# Custom Mode - User selects from categories
+# Security: snyk git-secrets license-checker
+# Performance: lighthouse imagemin-cli webpack-bundle-analyzer
+# Cleanup: prettier organize-imports-cli depcheck unimport
+# Analysis: cloc madge git-quick-stats
+```
+
+---
+
 ## FILE GENERATION LOGIC
 
 ### Directory Structure
 ```
-.claude/commands/project/cult/
-├── initiate.md                 # Entry point (already exists)
+examples/claude-commands/commands/project/cult/
+├── Initiate.md                 # Entry point (already exists)
 ├── ritual.md                   # Full 13-agent sequence
-├── assessment.md               # OVERSEER smart analysis
+├── smart-assessment.md         # OVERSEER smart analysis
 ├── foundation-house.md         # 3-agent foundation run
 ├── structure-house.md          # 4-agent structure run  
 ├── softstack-house.md          # 3-agent polish run
 ├── shipping-house.md           # 2-agent production run
-├── seance/
-│   ├── foundation-fix.md       # Quick 3-agent cleanup
-│   ├── structure-cleanse.md    # Quick 4-agent refactor
-│   ├── polish-pass.md          # Quick 3-agent UI improvement
-│   ├── ship-prep.md            # Quick 2-agent production prep
-│   ├── flow-check.md           # Quick 2-agent integration validation
-│   └── custom.md               # User-defined combination
+├── quick-audit.md              # 5-min assessment, no changes
+├── foundation-pass.md          # 15-min essential cleanup
+├── polish-pass.md              # 15-min UI/UX improvements  
+├── security-pass.md            # 10-min security hardening
 └── summon/
     ├── chronicler.md
     ├── hygienist.md
     ├── archivist.md
     ├── deconstructor.md
-    ├── circuitweaver.md         # NEW
+    ├── circuitweaver.md         # TO BE GENERATED
     ├── eliminator.md
     ├── enforcer.md
     ├── vince.md
@@ -338,7 +457,7 @@ Choose the path that serves best.
     ├── oracle.md
     ├── guardian.md
     ├── cryptkeeper.md
-    └── distiller.md             # UPDATED from neutralizer
+    └── distiller.md             # TO BE GENERATED
 ```
 
 ### Generation Rules
@@ -346,6 +465,28 @@ Choose the path that serves best.
 2. Never overwrite existing summon commands without confirmation
 3. Include generation timestamp in each file
 4. Add header crediting the initiation protocol
+
+### Enhanced Generation Process
+During initialization, the system now generates:
+
+**Core Files (Always Generate):**
+- quick-audit.md
+- foundation-pass.md  
+- polish-pass.md
+- security-pass.md
+- smart-assessment.md
+
+**Agent Summon Files (Generate Missing Only):**
+- Check existing summon files
+- Generate missing agents (circuitweaver.md, distiller.md)
+- Never overwrite existing agent files without confirmation
+
+**House Ritual Files (Verify Existing):**
+- Ensure all house files exist and are current
+- Update if schema changes detected
+
+### Quick Mode Integration
+Quick mode files are copied from their current locations to the command structure during initialization. This ensures immediate availability of all accessibility features.
 
 ---
 

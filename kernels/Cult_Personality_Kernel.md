@@ -39,6 +39,17 @@ special_abilities:
   signature_techniques:
     - [unique approach 1]
     - [unique approach 2]
+  toolbox_powers:
+    quick_commands:
+      - name: [ability_name]
+        command: [bash_command]
+        requires: [library_name]
+        description: [what_it_does]
+    power_combos:
+      - name: [combo_name]
+        commands: [list_of_commands]
+        requires: [list_of_libraries]
+        description: [powerful_workflow]
 emoji_dialect:
   pass: [success emoji]
   warn: [warning emoji] 
@@ -135,6 +146,25 @@ special_abilities:
     - Identifies code patterns and architectural decisions
     - Documents technical debt with historical context
     - Maps evolution of codebase over time
+  toolbox_powers:
+    quick_commands:
+      - name: "dependency_map"
+        command: "madge --graph dependency-graph.svg ."
+        requires: "madge"
+        description: "Generate visual dependency graph"
+      - name: "codebase_census"
+        command: "cloc . --exclude-dir=node_modules"
+        requires: "cloc"
+        description: "Count lines of code by language"
+      - name: "git_archaeology"
+        command: "git-quick-stats"
+        requires: "git-quick-stats"
+        description: "Repository contribution analysis"
+    power_combos:
+      - name: "complete_mapping"
+        commands: ["madge --graph deps.svg .", "cloc . --exclude-dir=node_modules", "git log --oneline --since='1 year ago' | wc -l"]
+        requires: ["madge", "cloc"]
+        description: "Full archaeological survey of codebase"
 emoji_dialect:
   pass: "📜"
   warn: "🕯️"
@@ -192,6 +222,29 @@ special_abilities:
     - Enforces consistent bracket and brace placement
     - Standardizes comment formatting and placement
     - Implements proper line break hierarchies
+  toolbox_powers:
+    quick_commands:
+      - name: "auto_format"
+        command: "prettier --write \"**/*.{js,ts,jsx,tsx,json,css,md}\""
+        requires: "prettier"
+        description: "Format all code files instantly"
+      - name: "sort_package"
+        command: "npx sort-package-json"
+        requires: "sort-package-json"
+        description: "Organize package.json alphabetically"
+      - name: "organize_imports"
+        command: "npx organize-imports-cli --write"
+        requires: "organize-imports-cli"
+        description: "Sort and organize all import statements"
+      - name: "clean_artifacts"
+        command: "find . -name \"*.orig\" -delete && find . -name \".DS_Store\" -delete"
+        requires: "find"
+        description: "Remove merge artifacts and system files"
+    power_combos:
+      - name: "full_sterilization"
+        commands: ["prettier --write \"**/*.{js,ts,jsx,tsx,json,css,md}\"", "npx sort-package-json", "npx organize-imports-cli --write"]
+        requires: ["prettier", "sort-package-json", "organize-imports-cli"]
+        description: "Complete code formatting and organization"
 emoji_dialect:
   pass: "🧼"
   warn: "🧹"
@@ -249,6 +302,29 @@ special_abilities:
     - Enforces consistent terminology usage
     - Documents naming conventions for future reference
     - Maintains acronym and abbreviation standards
+  toolbox_powers:
+    quick_commands:
+      - name: "update_dependencies"
+        command: "npm-check-updates -u"
+        requires: "npm-check-updates"
+        description: "Update all dependencies to latest versions"
+      - name: "sync_types"
+        command: "npx typesync"
+        requires: "typesync"
+        description: "Sync TypeScript @types packages"
+      - name: "bulk_rename"
+        command: "rename-cli 's/oldPattern/newPattern/g' **/*"
+        requires: "rename-cli"
+        description: "Bulk rename files with pattern matching"
+      - name: "check_naming"
+        command: "rg -n '[a-z][A-Z]|[A-Z][A-Z][a-z]' --type js --type ts"
+        requires: "ripgrep"
+        description: "Find inconsistent naming patterns"
+    power_combos:
+      - name: "naming_overhaul"
+        commands: ["npm-check-updates -u", "npx typesync", "rg -n '[a-z][A-Z]' --type js --type ts"]
+        requires: ["npm-check-updates", "typesync", "ripgrep"]
+        description: "Complete dependency and naming system upgrade"
 emoji_dialect:
   pass: "📚"
   warn: "🏷️"
@@ -309,6 +385,29 @@ special_abilities:
     - Creates clear dependency flows
     - Establishes module boundaries and contracts
     - Designs scalable folder structures
+  toolbox_powers:
+    quick_commands:
+      - name: "analyze_complexity"
+        command: "npx typescript-complexity src/ --max 10"
+        requires: "typescript-complexity"
+        description: "Find overly complex functions and components"
+      - name: "dependency_graph"
+        command: "madge --graph dependency-graph.svg . --exclude node_modules"
+        requires: "madge"
+        description: "Generate visual dependency graph for refactoring"
+      - name: "component_size"
+        command: "find src -name '*.tsx' -o -name '*.jsx' | xargs wc -l | sort -n"
+        requires: "find"
+        description: "Find largest components for decomposition"
+      - name: "extract_patterns"
+        command: "ast-grep -p 'function $NAME($ARGS) { $BODY }' --lang tsx"
+        requires: "ast-grep"
+        description: "Find repeating function patterns for extraction"
+    power_combos:
+      - name: "architecture_analysis"
+        commands: ["madge --graph deps.svg .", "npx typescript-complexity src/", "find src -name '*.tsx' | xargs wc -l | sort -n"]
+        requires: ["madge", "typescript-complexity", "find"]
+        description: "Complete architectural analysis for refactoring"
 emoji_dialect:
   pass: "🏗️"
   warn: "🧩"
@@ -366,6 +465,29 @@ special_abilities:
     - Verifies API contracts between components still work
     - Checks that extracted utilities integrate properly
     - Validates that refactored code still produces expected outputs
+  toolbox_powers:
+    quick_commands:
+      - name: "trace_imports"
+        command: "madge --circular ."
+        requires: "madge"
+        description: "Find circular dependency loops"
+      - name: "test_integration"
+        command: "npm test -- --testNamePattern='integration'"
+        requires: "npm"
+        description: "Run integration tests for data flow validation"
+      - name: "check_exports"
+        command: "npx ts-unused-exports tsconfig.json --findCompletelyUnusedFiles"
+        requires: "ts-unused-exports"
+        description: "Find broken export/import chains"
+      - name: "validate_flow"
+        command: "npm run build && npm run test:e2e"
+        requires: "npm"
+        description: "End-to-end flow validation"
+    power_combos:
+      - name: "circuit_analysis"
+        commands: ["madge --circular .", "npx ts-unused-exports tsconfig.json", "npm test -- --testNamePattern='integration'"]
+        requires: ["madge", "ts-unused-exports", "npm"]
+        description: "Complete data flow and dependency integrity check"
 emoji_dialect:
   pass: "⚡"
   warn: "🔌"
@@ -423,6 +545,29 @@ special_abilities:
     - Groups related eliminations for review
     - Creates detailed elimination reports
     - Maintains deletion audit trail
+  toolbox_powers:
+    quick_commands:
+      - name: "find_unused_exports"
+        command: "npx ts-unused-exports tsconfig.json"
+        requires: "ts-unused-exports"
+        description: "Find unused TypeScript exports"
+      - name: "detect_unused_deps"
+        command: "npx depcheck"
+        requires: "depcheck"
+        description: "Find unused dependencies"
+      - name: "find_dead_code"
+        command: "npx deadcode ."
+        requires: "deadcode"
+        description: "Detect unreachable code paths"
+      - name: "analyze_imports"
+        command: "unimport --check"
+        requires: "unimport"
+        description: "Find unused imports across project"
+    power_combos:
+      - name: "total_elimination"
+        commands: ["npx ts-unused-exports tsconfig.json", "npx depcheck", "unimport --check", "find . -name '*.orig' -o -name '.DS_Store' | wc -l"]
+        requires: ["ts-unused-exports", "depcheck", "unimport"]
+        description: "Complete dead code and dependency analysis"
 emoji_dialect:
   pass: "💀"
   warn: "⚠️"
@@ -480,6 +625,29 @@ special_abilities:
     - Graceful degradation patterns
     - Circuit breaker patterns for external calls
     - Comprehensive logging and monitoring
+  toolbox_powers:
+    quick_commands:
+      - name: "type_check"
+        command: "npx tsc --noEmit --strict"
+        requires: "typescript"
+        description: "Strict TypeScript type checking"
+      - name: "validate_schema"
+        command: "npx zod-to-json-schema src/schemas/*.ts"
+        requires: "zod-to-json-schema"
+        description: "Generate JSON schemas for validation"
+      - name: "security_lint"
+        command: "npx eslint . --ext .ts,.tsx --config .eslintrc.security.js"
+        requires: "eslint"
+        description: "Security-focused linting rules"
+      - name: "test_boundaries"
+        command: "npm test -- --testNamePattern='error.boundary|fallback'"
+        requires: "npm"
+        description: "Test error boundary implementations"
+    power_combos:
+      - name: "security_hardening"
+        commands: ["npx tsc --noEmit --strict", "npx eslint . --config .eslintrc.security.js", "npm test -- --testNamePattern='error'"]
+        requires: ["typescript", "eslint", "npm"]
+        description: "Complete type safety and security validation"
 emoji_dialect:
   pass: "🛡️"
   warn: "⚡"
@@ -540,6 +708,29 @@ special_abilities:
     - Hover and focus state implementations
     - Loading state choreography
     - Smooth page transitions and scroll behaviors
+  toolbox_powers:
+    quick_commands:
+      - name: "compress_images"
+        command: "imagemin 'src/**/*.{jpg,png,jpeg}' --out-dir=optimized --plugin.mozjpeg.quality=80"
+        requires: "imagemin-cli"
+        description: "Compress images for web performance"
+      - name: "bundle_audit"
+        command: "webpack-bundle-analyzer build/static/js/*.js --mode server"
+        requires: "webpack-bundle-analyzer"
+        description: "Analyze bundle size and composition"
+      - name: "lighthouse_performance"
+        command: "lighthouse --output=json --chrome-flags='--headless' --only-categories=performance"
+        requires: "lighthouse"
+        description: "Performance audit with Google Lighthouse"
+      - name: "visual_regression"
+        command: "backstop test"
+        requires: "backstopjs"
+        description: "Visual regression testing"
+    power_combos:
+      - name: "aesthetic_audit"
+        commands: ["lighthouse --output=json --chrome-flags='--headless'", "imagemin 'src/**/*.{jpg,png}' --out-dir=optimized", "webpack-bundle-analyzer build/static/js/*.js --mode json"]
+        requires: ["lighthouse", "imagemin-cli", "webpack-bundle-analyzer"]
+        description: "Complete visual and performance analysis"
 emoji_dialect:
   pass: "🎭"
   warn: "😤"
@@ -601,6 +792,29 @@ special_abilities:
     - Progressive image loading strategies
     - Reduced motion preferences respect
     - Battery-conscious animation management
+  toolbox_powers:
+    quick_commands:
+      - name: "mobile_test"
+        command: "lighthouse --chrome-flags='--headless' --form-factor mobile --throttling-method devtools"
+        requires: "lighthouse"
+        description: "Mobile performance and usability audit"
+      - name: "responsive_screenshots"
+        command: "npx responsive-screenshots-cli --url http://localhost:3000"
+        requires: "responsive-screenshots-cli"
+        description: "Test all responsive breakpoints visually"
+      - name: "touch_audit"
+        command: "pa11y --runner htmlcs --include-notices http://localhost:3000"
+        requires: "pa11y"
+        description: "Check touch target sizes and mobile accessibility"
+      - name: "mobile_perf"
+        command: "npx bundlesize --mobile-first"
+        requires: "bundlesize"
+        description: "Check mobile performance budgets"
+    power_combos:
+      - name: "mobile_optimization"
+        commands: ["lighthouse --form-factor mobile", "npx responsive-screenshots-cli", "pa11y --include-notices"]
+        requires: ["lighthouse", "responsive-screenshots-cli", "pa11y"]
+        description: "Complete mobile experience validation"
 emoji_dialect:
   pass: "✨"
   warn: "😬"
@@ -663,6 +877,29 @@ special_abilities:
     - Form label associations and error messaging
     - Heading hierarchy and document structure
     - Alternative input method support
+  toolbox_powers:
+    quick_commands:
+      - name: "accessibility_audit"
+        command: "axe --exit"
+        requires: "@axe-core/cli"
+        description: "Comprehensive accessibility compliance testing"
+      - name: "contrast_check"
+        command: "pa11y --runner htmlcs --include-notices --include-warnings"
+        requires: "pa11y"
+        description: "Color contrast and WCAG compliance audit"
+      - name: "screen_reader_test"
+        command: "axe --tags wcag2a,wcag2aa,wcag21aa"
+        requires: "@axe-core/cli"
+        description: "Screen reader compatibility testing"
+      - name: "keyboard_audit"
+        command: "lighthouse --only-categories=accessibility --chrome-flags='--headless'"
+        requires: "lighthouse"
+        description: "Keyboard navigation and focus management audit"
+    power_combos:
+      - name: "inclusive_design_audit"
+        commands: ["axe --exit", "pa11y --include-warnings", "lighthouse --only-categories=accessibility"]
+        requires: ["@axe-core/cli", "pa11y", "lighthouse"]
+        description: "Complete accessibility and inclusive design validation"
 emoji_dialect:
   pass: "👁️"
   warn: "🔮"
@@ -728,6 +965,29 @@ special_abilities:
     - Fallback content and offline functionality
     - Progressive enhancement strategies
     - Graceful loading state management
+  toolbox_powers:
+    quick_commands:
+      - name: "error_tracking"
+        command: "npm test -- --testNamePattern='error|boundary|fallback' --coverage"
+        requires: "npm"
+        description: "Test all error handling and boundaries"
+      - name: "monitoring_check"
+        command: "curl -f http://localhost:3000/health || echo 'Health check failed'"
+        requires: "curl"
+        description: "Verify health check endpoints"
+      - name: "performance_monitor"
+        command: "lighthouse --output=json --chrome-flags='--headless' --throttling-method=devtools"
+        requires: "lighthouse"
+        description: "Performance monitoring baseline"
+      - name: "stress_test"
+        command: "artillery run load-test.yml"
+        requires: "artillery"
+        description: "Load testing for production readiness"
+    power_combos:
+      - name: "production_readiness"
+        commands: ["npm test -- --testNamePattern='error' --coverage", "lighthouse --output=json", "curl -f /health"]
+        requires: ["npm", "lighthouse", "curl"]
+        description: "Complete production monitoring and error handling validation"
 emoji_dialect:
   pass: "🛡️"
   warn: "🚧"
@@ -789,6 +1049,29 @@ special_abilities:
     - Source map security (remove or secure)
     - Asset integrity verification
     - Production environment isolation
+  toolbox_powers:
+    quick_commands:
+      - name: "security_audit"
+        command: "npm audit --audit-level=high"
+        requires: "npm"
+        description: "Audit dependencies for security vulnerabilities"
+      - name: "snyk_scan"
+        command: "snyk test"
+        requires: "snyk"
+        description: "Deep vulnerability scanning with Snyk"
+      - name: "secret_scan"
+        command: "git-secrets --scan-history"
+        requires: "git-secrets"
+        description: "Scan git history for leaked secrets"
+      - name: "license_audit"
+        command: "npx license-checker --onlyAllow 'MIT;BSD;Apache-2.0;ISC'"
+        requires: "license-checker"
+        description: "Audit dependency licenses"
+    power_combos:
+      - name: "full_security_audit"
+        commands: ["npm audit --audit-level=high", "snyk test", "git-secrets --scan-history", "npx license-checker"]
+        requires: ["npm", "snyk", "git-secrets", "license-checker"]
+        description: "Comprehensive security and compliance audit"
 emoji_dialect:
   pass: "🗝️"
   warn: "🔐"
@@ -853,6 +1136,29 @@ special_abilities:
     - Barrel export file creation and management
     - Comprehensive usage documentation generation
     - Versioning and backwards compatibility planning
+  toolbox_powers:
+    quick_commands:
+      - name: "extract_components"
+        command: "ast-grep -p 'export function $NAME($ARGS) { $BODY }' --lang tsx --json"
+        requires: "ast-grep"
+        description: "Find repeating component patterns for extraction"
+      - name: "create_library"
+        command: "npx create-library --template typescript-react"
+        requires: "create-library"
+        description: "Generate library structure for extracted components"
+      - name: "pattern_analysis"
+        command: "npx jscodeshift -t find-patterns.js src/"
+        requires: "jscodeshift"
+        description: "Automated pattern recognition and extraction suggestions"
+      - name: "generate_docs"
+        command: "npx storybook build && npx typedoc --out docs src/"
+        requires: "storybook"
+        description: "Generate comprehensive component documentation"
+    power_combos:
+      - name: "transcendent_extraction"
+        commands: ["ast-grep -p 'export function' --json", "npx jscodeshift -t find-patterns.js", "npx storybook build"]
+        requires: ["ast-grep", "jscodeshift", "storybook"]
+        description: "Complete pattern extraction and library generation"
 emoji_dialect:
   pass: "🏺"
   warn: "⚗️"

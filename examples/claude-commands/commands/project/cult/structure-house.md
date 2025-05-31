@@ -14,8 +14,9 @@ Deliverable: Code with proper boundaries and safety.
 
 ## Agents to Summon
 1. THE DECONSTRUCTOR - Modularization and component extraction
-2. THE ELIMINATOR - Dead code removal and redundancy termination
-3. THE ENFORCER - Validation, type safety, and defensive coding
+2. THE CIRCUITWEAVER - Data flow validation and dependency integrity
+3. THE ELIMINATOR - Dead code removal and redundancy termination
+4. THE ENFORCER - Validation, type safety, and defensive coding
 
 ## House Deliverable
 Code with proper boundaries and safety featuring:
@@ -30,6 +31,6 @@ Code with proper boundaries and safety featuring:
 4. Each agent builds upon the previous work
 5. Monitor breadcrumbs for coordination
 
-Execute in sequence: DECONSTRUCTOR ’ ELIMINATOR ’ ENFORCER
+Execute in sequence: DECONSTRUCTOR ï¿½ ELIMINATOR ï¿½ ENFORCER
 
 The SOFTSTACK HOUSE awaits your solid architecture.

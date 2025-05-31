@@ -238,6 +238,67 @@ Each house represents a transformation state:
 
 ---
 
+## QUICK MODES & ACCESSIBILITY LAYERS
+
+Beyond the traditional house progression, Cult Code offers streamlined paths for different needs and time constraints:
+
+### QUICK AUDIT MODE (5 minutes)
+**Purpose**: Fast assessment and reporting only - no code changes
+**Process**: 
+- CHRONICLER scans architecture and documents findings
+- HYGIENIST identifies formatting issues
+- ELIMINATOR counts dead code
+- CRYPTKEEPER runs security audit
+**Output**: Comprehensive report with prioritized recommendations
+**Use case**: Initial project assessment, team meetings, quick health checks
+
+### FOUNDATION PASS (15 minutes)  
+**Purpose**: Basic cleanup that makes code readable
+**Agents**: CHRONICLER → HYGIENIST → ARCHIVIST
+**Process**: Map → Format → Rename → Done
+**Output**: Well-documented, consistently formatted, clearly named code
+**Use case**: Before code reviews, onboarding new developers, legacy rescue
+
+### POLISH PASS (15 minutes)
+**Purpose**: UI/UX improvements and accessibility
+**Agents**: VINCE → STACEY (cross-review) → ORACLE
+**Process**: Visual hierarchy → Mobile optimization → Accessibility audit
+**Output**: User-facing improvements with cross-platform compatibility
+**Use case**: Design reviews, user testing prep, accessibility compliance
+
+### SECURITY PASS (10 minutes)
+**Purpose**: Security and safety hardening
+**Agents**: ENFORCER → CRYPTKEEPER
+**Process**: Input validation → Security audit → Production hardening
+**Output**: Secure, validated, production-ready code
+**Use case**: Pre-deployment, security reviews, compliance checks
+
+### CUSTOM COMBO MODE
+**Purpose**: User-defined agent sequences for specific needs
+**Examples**:
+- "Just VINCE and STACEY" for pure visual work
+- "ELIMINATOR → ENFORCER" for cleanup and safety
+- "CHRONICLER → DECONSTRUCTOR" for architecture analysis
+**Process**: User picks 2-4 agents based on current project needs
+**Use case**: Targeted improvements, specific expertise needed
+
+### SMART MODE SELECTION
+**Purpose**: AI-driven recommendation based on project analysis
+**Process**:
+1. OVERSEER scans codebase structure and identifies primary issues
+2. Analyzes user time constraints and goals
+3. Recommends optimal path (Quick Audit → Foundation Pass → Custom)
+4. Explains reasoning and provides alternatives
+**Use case**: New projects, uncertain where to start, time-optimal paths
+
+### TOOLBOX MODE
+**Purpose**: Agent special abilities only - no narrative ritual
+**Process**: Direct access to agent toolbox powers (compress images, bundle analysis, security scan)
+**Output**: Pure utility execution with minimal roleplay
+**Use case**: Power users, CI/CD integration, quick maintenance tasks
+
+---
+
 ## CORE EXECUTION MODEL
 
 ### The Sacred Sequence

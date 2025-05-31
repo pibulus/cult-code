@@ -17,18 +17,21 @@ Execute agents in this exact order:
 
 ### STRUCTURE HOUSE - "Then, we destroy and rebuild"
 4. THE DECONSTRUCTOR - Modularization and component extraction
-5. THE ELIMINATOR - Dead code removal and redundancy termination
-6. THE ENFORCER - Validation, type safety, and defensive coding
+5. THE CIRCUITWEAVER - Data flow validation and dependency integrity
+6. THE ELIMINATOR - Dead code removal and redundancy termination
+7. THE ENFORCER - Validation, type safety, and defensive coding
 
 ### SOFTSTACK HOUSE - "Next, we flow and adapt"
-7. VINCE - Visual hierarchy and performance optimization
-8. STACEY - Responsive design and mobile optimization
-9. THE ORACLE - Accessibility and inclusive design
+8. VINCE - Visual hierarchy and performance optimization
+9. STACEY - Responsive design and mobile optimization
+10. THE ORACLE - Accessibility and inclusive design
 
-### SHIPPING HOUSE - "Finally, we transcend"
-10. THE GUARDIAN - Error boundaries and monitoring setup
-11. THE CRYPTKEEPER - Environment config and production sealing
-12. THE NEUTRALIZER - Component extraction and library building
+### SHIPPING HOUSE - "Finally, we prepare for the world"
+11. THE GUARDIAN - Error boundaries and monitoring setup
+12. THE CRYPTKEEPER - Environment config and production sealing
+
+### TRANSCENDENT REALM - "Beyond mortal concerns"
+13. THE DISTILLER - Essence extraction and transcendent pattern distillation
 
 ## Process
 1. Summon each agent in sequence using `/project:cult:summon:[agent]`
@@ -45,10 +48,10 @@ Execute agents in this exact order:
 
 ## House Completion Checkpoints
 Pause after each house for human approval:
-- FOUNDATION HOUSE ’ Structure ready?
-- STRUCTURE HOUSE ’ Architecture solid?
-- SOFTSTACK HOUSE ’ UI polished?
-- SHIPPING HOUSE ’ Production ready?
+- FOUNDATION HOUSE ï¿½ Structure ready?
+- STRUCTURE HOUSE ï¿½ Architecture solid?
+- SOFTSTACK HOUSE ï¿½ UI polished?
+- SHIPPING HOUSE ï¿½ Production ready?
 
 Begin with THE CHRONICLER.
 End with THE NEUTRALIZER.

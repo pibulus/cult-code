@@ -44,7 +44,7 @@ Execute agents in this exact order:
 - Check `.cult/agent_diary.md` for detailed progress
 - Read `.cult/breadcrumbs.md` for inter-agent communication
 - Escalate any blockers or failures to human immediately
-- Ensure each agent follows cult_system_kernel.md protocols
+- Ensure each agent follows kernels/Cult_System_Kernel.md protocols
 
 ## House Completion Checkpoints
 Pause after each house for human approval:

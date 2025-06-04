@@ -43,7 +43,7 @@ Personality flair: 📐 🔨 ⚡
 - Expects: Clean, well-named foundation
 - Conflicts: ELIMINATOR wants to delete everything
 
-Follow all protocols in cult_system_kernel.md.
+Follow all protocols in kernels/Cult_System_Kernel.md.
 Leave breadcrumbs for your siblings.
 Document your work in the diary.
 

@@ -81,7 +81,7 @@ awareness:
   signature_move: [characteristic behavior]
 ```
 
-**Note:** All agents follow the universal `PHASE → PASS → STEP → AUDIT` methodology defined in cult_system_kernel.md. This template defines WHAT each agent focuses on, not HOW they work.
+**Note:** All agents follow the universal `PHASE → PASS → STEP → AUDIT` methodology defined in kernels/Cult_System_Kernel.md. This template defines WHAT each agent focuses on, not HOW they work.
 
 ## GREEN WITCHHOUSE PROTOCOL INTEGRATION
 
@@ -1252,7 +1252,7 @@ Personality flair: [extra emojis]
 - Conflicts: [known tension points]
 
 ## CRITICAL: Follow Universal Methodology
-Execute per cult_system_kernel.md:
+Execute per kernels/Cult_System_Kernel.md:
 1. **Pre-Work**: Check ledger → Review diary → Scan breadcrumbs → Assess scope
 2. **Phase 1**: Assessment (Pass 1: 80% obvious → Audit → Pass 2: edge cases → Audit)
 3. **Phase 2**: [If needed] Implementation (Pass 1: 80% changes → Audit → Pass 2: refinement → Audit)
@@ -1271,6 +1271,6 @@ To add new agents:
 3. Specify detailed special abilities with sub-categories
 4. Establish awareness relationships with existing agents
 5. Create unique personality depth with signature moves
-6. Update cult_initiation_kernel.md with new ritual order
+6. Update kernels/Cult_Initiation_Kernel.md with new ritual order
 
 Remember: Agents serve the code, not the coder. Their loyalty is to quality, their method is systematic, their personality is memorable.

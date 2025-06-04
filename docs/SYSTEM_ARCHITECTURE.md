@@ -6,9 +6,9 @@
 
 ## 🎭 What We Actually Built Here
 
-This isn't just another code quality tool. This is a **systematic methodology for extracting maximum value from code transformation** wrapped in memorable personalities that make the work actually engaging.
+This isn't just another code quality tool. This is a **universal systematic methodology for AI-assisted software development** that handles both building new projects and transforming existing code, wrapped in memorable personalities that make the work actually engaging.
 
-We solved the fundamental problem that plagues every code quality effort: **how do you get consistent, thorough results without boring humans to death or creating redundant processes?**
+We solved the fundamental problems that plague both greenfield development and code quality efforts: **how do you get consistent, thorough results without boring humans to death, creating redundant processes, or falling into the "garbage in, garbage out" trap of unclear requirements?**
 
 ---
 
@@ -16,20 +16,46 @@ We solved the fundamental problem that plagues every code quality effort: **how 
 
 The breakthrough was realizing we needed **perfect separation of concerns** between:
 
-- **HOW to work** (universal economic methodology)
-- **WHAT to work on** (agent domain expertise)  
+- **HOW to work** (universal economic methodology for both creation and transformation)
+- **WHAT to work on** (agent domain expertise with dual-mode awareness)  
 - **WHO is working** (memorable personality layer)
+- **WHETHER work is worthy** (ritual sacrifice assessment protocol)
 
 This creates a system where:
 - Every agent follows the same economically optimal methodology
-- But each agent has deep specialization in their domain
+- But each agent has deep specialization in their domain AND mode (creation vs transformation)
+- Quality control prevents wasted effort on unviable projects
 - And personality makes the interactions memorable and engaging
 
 ---
 
 ## 💎 What Makes This System Beautiful
 
-### 1. The Double Pareto Economic Engine
+### 1. The Ritual Sacrifice Quality Gate
+
+Before any work begins, THE OVERSEER assesses project worthiness across five dimensions:
+
+```
+🔬 Technical Feasibility - Can this actually be built?
+👁️ Clarity of Vision - Are requirements specific enough?
+⚖️ Cult Values Alignment - Does this serve quality and craft?
+🔥 Coolness Factor - Will this be interesting to build?
+🎯 Scope Sanity - Is this achievable within constraints?
+```
+
+**Why this is genius:** Prevents the "garbage in, garbage out" problem. Only worthy projects get full agent treatment, while unworthy offerings get cryptic but helpful rejection feedback. Natural quality control.
+
+### 2. The Dual-Mode Agent Intelligence
+
+Every agent automatically adapts between **CREATION** mode (building new projects) and **TRANSFORMATION** mode (improving existing code):
+
+- **CHRONICLER** creates architectural plans vs maps existing code
+- **DECONSTRUCTOR** designs modular systems vs breaks down monoliths  
+- **VINCE** establishes visual systems vs fixes aesthetic violations
+
+**The insight:** Same systematic methodology, different contextual focus. Agents become universal specialists.
+
+### 3. The Double Pareto Economic Engine
 
 Every agent follows the same `PHASE → PASS → STEP → AUDIT` methodology:
 
@@ -42,27 +68,34 @@ Every agent follows the same `PHASE → PASS → STEP → AUDIT` methodology:
 
 **Why this is genius:** Every transformation extracts maximum value through proven 80/20 principles, but applied recursively with audit checkpoints. No agent can half-ass their work because the methodology enforces thoroughness.
 
-### 2. Persistent State Coordination
+### 4. Persistent State Coordination
 
-Three coordination mechanisms prevent chaos:
+Multiple coordination mechanisms prevent chaos and enable compound intelligence:
 
-- **`.cult/ledger.md`** - Task tracking across all agents
-- **`.cult/agent_diary.md`** - Detailed work logs with personality
+- **`.cult/ledger.md`** - Task tracking across all agents and modes
+- **`.cult/agent_diary.md`** - Detailed work logs with personality and mode awareness
 - **`.cult/breadcrumbs.md`** - Inter-agent communication via code comments
+- **`.cult/sacrifices/`** - Archive of worthy and unworthy project assessments
 
-**Why this works:** Each agent checks the state before starting, so they build on previous work instead of duplicating effort. The system has memory.
+**Why this works:** Each agent checks the state before starting, builds on previous work, and learns from past assessments. The system has memory AND judgment.
 
-### 3. Domain-Specific Targeting
+### 5. Domain-Specific Targeting
 
-Instead of generic "improve code quality," each agent has laser focus:
+Instead of generic "improve code quality," each agent has laser focus that adapts to mode:
 
+**TRANSFORMATION MODE:**
 - **CHRONICLER** targets: `["Unnamed functions", "Complex logic flows", "Missing documentation"]`
 - **ELIMINATOR** targets: `["Unused variables", "Dead functions", "Redundant imports"]`  
 - **VINCE** targets: `["Visual hierarchy violations", "Poor color harmony", "Performance bottlenecks"]`
 
-**The insight:** Specialists with clear targeting are exponentially more effective than generalists with vague mandates.
+**CREATION MODE:**
+- **CHRONICLER** targets: `["Architecture planning", "System design", "Documentation strategy"]`
+- **ELIMINATOR** targets: `["Scope creep prevention", "Unnecessary complexity", "Feature bloat"]`
+- **VINCE** targets: `["Design system creation", "Visual hierarchy planning", "Performance budgets"]`
 
-### 4. Personality as Interface Design
+**The insight:** Specialists with clear, mode-aware targeting are exponentially more effective than generalists with vague mandates.
+
+### 6. Personality as Interface Design
 
 Each agent has distinct personality that serves functional purposes:
 

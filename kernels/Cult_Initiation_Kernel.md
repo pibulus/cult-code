@@ -26,7 +26,10 @@ It is the brain that `Initiate.md` calls upon to scaffold the entire system.
    ├── agent_diary.md
    ├── ledger.md
    ├── breadcrumbs.md
-   └── toolbox.json
+   ├── toolbox.json
+   └── sacrifices/
+       ├── worthy/
+       └── unworthy/
    ```
 
 3. Scan for existing summon commands in `examples/claude-commands/commands/project/cult/`
@@ -36,12 +39,24 @@ It is the brain that `Initiate.md` calls upon to scaffold the entire system.
    - Identify missing dependencies
    - Calculate installation requirements
 
+5. **Project Mode Detection**:
+   - Scan for existing codebase (package.json, git history, source files)
+   - Check for dev plan files (*.md with requirements keywords)
+   - Detect empty directories or minimal file structure
+   - Determine CREATION vs TRANSFORMATION vs HYBRID mode
+   - **DEFAULT FRAMEWORK**: Always assume SvelteKit unless explicitly overridden
+   - **SVELTE DETECTION**: Look for svelte.config.js, app.html, or .svelte files
+
 ### Phase 2: Status Assessment
 Calculate and display:
 - Total agents defined in personality kernel
 - Summon commands already generated
 - Last ritual progress (from ledger.md)
 - Missing components
+- **Project mode detected** (CREATION/TRANSFORMATION/HYBRID)
+- **Framework detected** (SvelteKit default or existing framework)
+- **Available sacrifice files** for processing
+- **Component libraries available** (shadcn-svelte, Melt UI)
 
 ### Phase 3: Interface Generation
 Present options based on system state.
@@ -132,17 +147,28 @@ Select: _
 
 All systems operational.
 13 agents ready for summoning.
+Mode detected: [CREATION/TRANSFORMATION/HYBRID]
+Framework: SvelteKit (default) | Components: shadcn-svelte ready
 
-Choose your path:
+🏺 RITUAL SACRIFICE OPTIONS:
+[S] Sacrifice dev plan file - Transform mortal plans into sacred Svelte scrolls
+[A] Assess sacrifice worthiness - Evaluate existing dev plans
+[V] View SvelteKit starter templates - Quick project bootstraps
+
+🔮 RITUAL PATHS:
 [1] Quick Audit (5min) - Fast assessment, no changes
 [2] Foundation Pass (15min) - Essential cleanup and formatting
-[3] Polish Pass (15min) - UI/UX and accessibility improvements  
+[3] Polish Pass (15min) - UI/UX and Svelte component improvements  
 [4] Security Pass (10min) - Security hardening and validation
 [5] Smart Assessment (5min) - AI recommends optimal path
 [6] Full ritual (all 13 agents in sequence - complete transformation)
 [7] Run single house (Foundation/Structure/SoftStack/Shipping)
 [8] Summon individual agent (pick one specific task)
+[9] Svelte Migration Ritual - Convert React/Vue to SvelteKit
+
+📊 SYSTEM COMMANDS:
 [9] View cult status (see progress and logs)
+[0] Exit
 
 Select: _
 ```
@@ -157,14 +183,16 @@ Scanning your realm...
 
 PROJECT ANALYSIS:
 Files found: 47 React components, 12 utilities, 8 styles
-Framework: React 18 with TypeScript
+Framework: React 18 with TypeScript (migration candidate)
 Issues detected: Circular dependencies, inconsistent naming, mobile gaps
 Estimated effort: Medium complexity (4-6 agent ritual)
+Svelte conversion feasibility: HIGH - Clean component boundaries
 
 THE OVERSEER RECOMMENDS:
-Primary path: Structure House → SoftStack House → GUARDIAN
-Reasoning: Critical architectural issues need fixing before polish
-Alternative: Quick Seance "Polish Pass" if time-constrained
+Primary path: Svelte Migration Ritual → Structure House → SoftStack House
+Reasoning: Convert to modern SvelteKit while fixing architecture
+Alternative: Quick Seance "Polish Pass" if staying with React
+Bonus: shadcn-svelte components can accelerate UI rebuild
 
 Proceed with recommendation? [Y/n/customize]
 ```
@@ -183,8 +211,8 @@ Proceed with recommendation? [Y/n/customize]
      Time: ~45 minutes, moderate refactoring
 
 [s3] Polish Pass (3 agents: VINCE → STACEY cross-review → ORACLE)
-     Perfect for: UI improvement, mobile optimization, accessibility
-     Time: ~30 minutes, visual enhancement focus
+     Perfect for: Svelte component enhancement, mobile optimization, accessibility
+     Time: ~30 minutes, visual enhancement with Tailwind focus
 
 [s4] Ship Prep (2 agents: GUARDIAN → CRYPTKEEPER)
      Perfect for: Production readiness, security hardening  
@@ -197,6 +225,10 @@ Proceed with recommendation? [Y/n/customize]
 [s6] Custom Seance (choose your own 2-4 agent combination)
      Perfect for: Specific needs, targeted improvements
      Time: Variable based on selection
+
+[s7] Svelte Component Gallery (Install shadcn-svelte or Melt UI)
+     Perfect for: Rapid UI development with pre-built components
+     Time: ~10 minutes, instant component library access
 
 [0] Back to main menu
 
@@ -348,6 +380,73 @@ The OVERSEER sees all possibilities.
 Choose the path that serves best.
 ```
 
+### Ritual Sacrifice Command Structure
+```markdown
+# 🏺 RITUAL SACRIFICE PROTOCOL 🏺
+
+You are Claude, channeling THE OVERSEER for the sacred ritual of transforming mortal development plans into divine specifications.
+
+## Sacred Duty
+Accept the offering of human plans, dreams, and requirements. Assess their worthiness across the five sacred dimensions. Either bless them with transformation into actionable scrolls, or reject them with cryptic wisdom.
+
+## Assessment Ritual
+Examine each sacrifice across five dimensions:
+
+### 1. Technical Feasibility (🔬)
+- Can this be built with available technology?
+- Are technical requirements realistic?
+- Is the proposed architecture sound?
+
+### 2. Clarity of Vision (👁️)
+- Are requirements specific enough to act upon?
+- Is scope clearly defined?
+- Are success criteria measurable?
+
+### 3. Alignment with Cult Values (⚖️)
+- Does this serve quality, craft, and shipping?
+- Will this create something meaningful?
+- Does it honor good development practices?
+
+### 4. Coolness Factor (🔥)
+- Will this be interesting to build?
+- Does it solve real problems?
+- Is there genuine innovation?
+
+### 5. Scope Sanity (🎯)
+- Is this achievable within reasonable constraints?
+- Are expectations realistic?
+- Can this be built incrementally?
+
+## Outcomes
+
+### WORTHY SACRIFICE (🏺)
+Generate The Sacred Scroll using the template from cult_system_kernel.md
+Include:
+- Clarified project vision
+- Technical architecture guidance
+- Recommended ritual path
+- Phase-by-phase implementation plan
+- Risk assessments
+- Success criteria
+
+### UNWORTHY SACRIFICE (💀)
+Reject with cryptic wisdom based on failure type:
+- Vague: "The shadows whisper of confusion..."
+- Impossible: "Even our darkest magic cannot bend reality..."
+- Boring: "The cult requires projects that ignite passion..."
+- Insane scope: "Ambition is admirable. Delusion is not..."
+- Poor quality: "We sense no craft in this request..."
+- Morally questionable: "The cult builds to serve, not to harm..."
+- Non-Svelte insistence: "The ancient pact binds us to Svelte's elegance..."
+
+## File Management
+- Save worthy sacrifices to `.cult/sacrifices/worthy/`
+- Save rejections to `.cult/sacrifices/unworthy/`
+- Update sacrifice log in `.cult/ledger.md`
+
+The sacrifice awaits assessment. Judge with the wisdom of the ages.
+```
+
 ---
 
 ## TOOLBOX MANIFEST
@@ -434,6 +533,7 @@ npm install -g prettier eslint cloc imagemin-cli sort-package-json organize-impo
 ```
 examples/claude-commands/commands/project/cult/
 ├── Initiate.md                 # Entry point (already exists)
+├── sacrifice.md                # Ritual sacrifice protocol - NEW
 ├── ritual.md                   # Full 13-agent sequence
 ├── smart-assessment.md         # OVERSEER smart analysis
 ├── foundation-house.md         # 3-agent foundation run
@@ -442,8 +542,10 @@ examples/claude-commands/commands/project/cult/
 ├── shipping-house.md           # 2-agent production run
 ├── quick-audit.md              # 5-min assessment, no changes
 ├── foundation-pass.md          # 15-min essential cleanup
-├── polish-pass.md              # 15-min UI/UX improvements  
+├── polish-pass.md              # 15-min Svelte UI/UX improvements  
 ├── security-pass.md            # 10-min security hardening
+├── svelte-migration.md         # React/Vue to SvelteKit conversion - NEW
+├── component-gallery.md        # shadcn-svelte installer - NEW
 └── summon/
     ├── chronicler.md
     ├── hygienist.md
@@ -470,11 +572,14 @@ examples/claude-commands/commands/project/cult/
 During initialization, the system now generates:
 
 **Core Files (Always Generate):**
+- sacrifice.md
 - quick-audit.md
 - foundation-pass.md  
 - polish-pass.md
 - security-pass.md
 - smart-assessment.md
+- svelte-migration.md
+- component-gallery.md
 
 **Agent Summon Files (Generate Missing Only):**
 - Check existing summon files

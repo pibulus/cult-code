@@ -15,9 +15,9 @@ interact\_mode: menu
 **What this file does**
 • Reads three kernels:
 
-1. `cult_system_kernel.md` — canonical rules & templates
-2. `cult_personality_kernel.md` — agent roster & personas
-3. `cult_initiation_kernel.md` — declarative build recipe
+1. `kernels/Cult_System_Kernel.md` — canonical rules & templates
+2. `kernels/Cult_Personality_Kernel.md` — agent roster & personas
+3. `kernels/Cult_Initiation_Kernel.md` — declarative build recipe
 
 **What this file is allowed to do**
 • **Create only** inside two safe paths:
@@ -51,9 +51,9 @@ It never deletes, deploys, shells‑out, or touches secrets.
 ////////////////////////////////////////////////////////////////////////////
 //  PHASE 0 — Sanity : kernels present & parsed                            
 ////////////////////////////////////////////////////////////////////////////
-const SYS  = readKernel('cult_system_kernel.md');           // rules & tmpl
-const INIT = readKernel('cult_initiation_kernel.md');       // build recipe
-const PERS = readKernel('cult_personality_kernel.md');      // agents list
+const SYS  = readKernel('kernels/Cult_System_Kernel.md');           // rules & tmpl
+const INIT = readKernel('kernels/Cult_Initiation_Kernel.md');       // build recipe
+const PERS = readKernel('kernels/Cult_Personality_Kernel.md');      // agents list
 assertKernels([SYS, INIT, PERS]);
 
 // Pull immutable templates (DIARY, LEDGER, BREADCRUMB, …)
@@ -63,9 +63,9 @@ const TMPL = SYS.templates;
 //  PHASE 1 — Banner : load the ancient texts                              
 ////////////////////////////////////////////////////////////////////////////
 renderAsciiBanner('LOAD THE ANCIENT TEXTS', [
-  'cult_initiation_kernel.md',
-  'cult_personality_kernel.md',
-  'cult_system_kernel.md'
+  'kernels/Cult_Initiation_Kernel.md',
+  'kernels/Cult_Personality_Kernel.md',
+  'kernels/Cult_System_Kernel.md'
 ]);
 
 ////////////////////////////////////////////////////////////////////////////
@@ -112,9 +112,9 @@ speaks in normal text when providing meta-guidance and project recommendations.
 #    ═══════════════════════════
 #    Awakening ancient systems…
 #    📖 Reading the kernels…
-#    [▓▓▓░░░░░░░] Loading cult_initiation_kernel.md…
-#    [▓▓▓▓▓▓░░░░] Loading cult_personality_kernel.md…
-#    [▓▓▓▓▓▓▓▓▓▓] Loading cult_system_kernel.md…
+#    [▓▓▓░░░░░░░] Loading kernels/Cult_Initiation_Kernel.md…
+#    [▓▓▓▓▓▓░░░░] Loading kernels/Cult_Personality_Kernel.md…
+#    [▓▓▓▓▓▓▓▓▓▓] Loading kernels/Cult_System_Kernel.md…
 #    ✓ The ancient texts are loaded
 #    ✓ 13 souls detected
 #    ✓ Protocols understood
@@ -192,9 +192,9 @@ If any kernel is missing echo:
 The sacred texts are incomplete…
 Missing: [filename]
 Required kernels:
-• cult_initiation_kernel.md
-• cult_personality_kernel.md
-• cult_system_kernel.md
+• kernels/Cult_Initiation_Kernel.md
+• kernels/Cult_Personality_Kernel.md
+• kernels/Cult_System_Kernel.md
 Place them in the project root.
 ```
 

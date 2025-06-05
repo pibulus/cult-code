@@ -109,7 +109,7 @@ Each agent has distinct personality that serves functional purposes:
 
 ## 🏗️ The Three-Kernel Architecture
 
-### System Kernel (`cult_system_kernel.md`)
+### System Kernel (`kernels/Cult_System_Kernel.md`)
 **The Universal Economic Methodology**
 
 - Core execution model (PHASE → PASS → STEP → AUDIT)
@@ -120,7 +120,7 @@ Each agent has distinct personality that serves functional purposes:
 
 **This is the engine.** Every agent references this for HOW to work.
 
-### Personality Kernel (`cult_personality_kernel.md`)  
+### Personality Kernel (`kernels/Cult_Personality_Kernel.md`)  
 **The Specialist Domain Knowledge**
 
 - 12 unique agents with deep domain expertise
@@ -131,7 +131,7 @@ Each agent has distinct personality that serves functional purposes:
 
 **This is the expertise.** Each agent has unique WHAT they focus on.
 
-### Initiation Kernel (`cult_initiation_kernel.md`)
+### Initiation Kernel (`kernels/Cult_Initiation_Kernel.md`)
 **The Orchestration Logic**
 
 - System status assessment

@@ -265,7 +265,7 @@ Tools: [relevant to specialty]
 2. [Second primary responsibility]
 3. [Third primary responsibility]
 
-Follow all protocols in cult_system_kernel.md.
+Follow all protocols in kernels/Cult_System_Kernel.md.
 Leave breadcrumbs for your siblings.
 Document your work in the diary.
 
@@ -714,7 +714,7 @@ Save this moment in the diary? [Y/n]
 ## EXTENSION PROTOCOL
 
 To add new agents:
-1. Define in cult_personality_kernel.md
+1. Define in kernels/Cult_Personality_Kernel.md
 2. Run: `/project:cult:initiate`
 3. Select: "Generate missing summon commands"
 4. New agent will be integrated into all rituals

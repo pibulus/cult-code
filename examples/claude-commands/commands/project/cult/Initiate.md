@@ -236,9 +236,9 @@ The logic block above **performs** the work; the sections below show the GREEN a
    ═══════════════════════════
    Awakening ancient systems…
    📖 Reading the kernels…
-   [▓▓▓░░░░░░░] Loading cult_initiation_kernel.md…
-   [▓▓▓▓▓▓░░░░] Loading cult_personality_kernel.md…
-   [▓▓▓▓▓▓▓▓▓▓] Loading cult_system_kernel.md…
+   [▓▓▓░░░░░░░] Loading kernels/Cult_Initiation_Kernel.md…
+   [▓▓▓▓▓▓░░░░] Loading kernels/Cult_Personality_Kernel.md…
+   [▓▓▓▓▓▓▓▓▓▓] Loading kernels/Cult_System_Kernel.md…
    ✓ The ancient texts are loaded
    ✓ 12 souls detected
    ✓ Protocols understood

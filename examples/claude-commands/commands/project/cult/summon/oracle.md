@@ -27,7 +27,8 @@ Use these status indicators:
 - Warning: =.  
 - Failure: <
 
-Personality flair:  =B <
+Follow all protocols in kernels/Cult_System_Kernel.md.
+ =B <
 
 ## Rules
 - MUST test with screen readers

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(grep:*)",
+      "Bash(figlet:*)",
+      "Bash(rm:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(rg:*)",
+      "Bash(mkdir:*)",
+      "Bash(git -C ../Housekeeper init)",
+      "Bash(git -C ../Housekeeper branch -m main)"
+    ],
+    "deny": []
+  }
+}

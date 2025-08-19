@@ -86,6 +86,15 @@ This methodology works because:
 These are the sacred protocols that bind all agents of Cult Code.
 No agent may deviate from these laws, though they may express them through their unique lens.
 
+### Framework Adaptation
+The cult automatically adapts to your project's framework. No configuration needed - agents will:
+- Read your package.json to understand dependencies
+- Check README for architecture notes
+- Adapt their expertise to your tech stack
+- Use framework-appropriate patterns and idioms
+
+Whether you're using React, Vue, Angular, Svelte, or vanilla JavaScript, the agents will speak your language and follow your framework's best practices.
+
 ## CLAUDE CODE OPTIMIZATION
 
 ### Reading Files Efficiently
@@ -306,61 +315,61 @@ When a sacrifice is deemed worthy, THE OVERSEER generates a standardized scroll:
 [Clarified project purpose and goals]
 
 ### Technical Architecture (Cult Standard)
-**Framework:** SvelteKit (default choice for all projects)
-**Styling:** Tailwind CSS + CSS Custom Properties
+**Framework:** Auto-detected from project (React, Vue, Angular, Svelte, etc.)
+**Styling:** Project's existing CSS solution + Custom Properties
 **Type Safety:** TypeScript with strict mode
-**Component Libraries:** shadcn-svelte, Melt UI (approved ecosystem)
-**Build System:** Vite (SvelteKit default)
-**Icons:** Lucide Svelte
-**State Management:** Svelte stores + context API
-**Animations:** Svelte transitions + CSS transforms
+**Component Libraries:** Framework-appropriate UI libraries
+**Build System:** Auto-detected (Vite, Webpack, etc.)
+**Icons:** Framework-appropriate icon library
+**State Management:** Framework-appropriate state solution
+**Animations:** Framework transitions + CSS transforms
 
 ### Agent-Optimized Specifications
 
 #### CHRONICLER Tasks:
-- Document SvelteKit project structure and routing
+- Document project structure and routing
 - Map component hierarchy and data flow patterns
-- Create Svelte store architecture documentation
+- Create state management architecture documentation
 - Define TypeScript interfaces for all data models
 
 #### DECONSTRUCTOR Tasks:
-- Design modular Svelte component architecture
+- Design modular component architecture
 - Plan reusable component extraction strategy
 - Establish folder structure: routes/, lib/, components/
 - Define component composition patterns
 
 #### VINCE Tasks:
-- Create Tailwind design system with CSS variables
-- Implement Svelte transition library
+- Create design system with CSS variables
+- Implement transition library
 - Optimize bundle size and lazy loading
 - Design responsive component variants
 
 #### STACEY Tasks:
-- Ensure mobile-first responsive Svelte components
+- Ensure mobile-first responsive components
 - Implement touch-friendly interactions
 - Test responsive breakpoints across devices
 - Optimize mobile performance
 
 #### ORACLE Tasks:
-- Implement ARIA labels and semantic HTML in Svelte
+- Implement ARIA labels and semantic HTML
 - Ensure keyboard navigation for all components
 - Test screen reader compatibility
 - Add focus management for SPA routing
 
 #### ENFORCER Tasks:
 - Set up TypeScript strict mode configuration
-- Implement form validation with Svelte stores
+- Implement form validation with state management
 - Add input sanitization and error boundaries
-- Configure CSP headers for SvelteKit
+- Configure CSP headers for the framework
 
 #### GUARDIAN Tasks:
-- Implement error boundaries for Svelte components
+- Implement error boundaries for components
 - Add monitoring and analytics integration
 - Set up health checks and status monitoring
 - Create fallback UI components
 
 #### CRYPTKEEPER Tasks:
-- Configure SvelteKit adapter for production deployment
+- Configure framework adapter for production deployment
 - Implement environment variable management
 - Set up security headers and CSP policies
 - Audit dependencies for vulnerabilities
@@ -370,48 +379,44 @@ When a sacrifice is deemed worthy, THE OVERSEER generates a standardized scroll:
 **Key Agents:** [Specific agent recommendations based on project needs]
 **Estimated Effort:** [Time and complexity assessment]
 
-### Svelte Project Structure
+### Project Structure (Adaptive)
 ```
 src/
-├── routes/              # SvelteKit pages and layouts
-├── lib/
-│   ├── components/      # Reusable Svelte components
-│   ├── stores/          # Svelte stores and state
-│   ├── utils/           # Utility functions
-│   └── types/           # TypeScript type definitions
-├── app.html             # App shell
-└── app.css              # Global styles
+├── [routing]/           # Pages and layouts (framework-specific)
+├── components/          # Reusable components
+├── [state]/             # State management (stores, context, etc.)
+├── utils/               # Utility functions
+├── types/               # TypeScript definitions (if applicable)
+├── styles/              # Global styles
+└── [configs]            # Framework configuration files
 ```
 
-### Package Dependencies
+### Package Dependencies (Framework-Adaptive)
 **Core:**
-- @sveltejs/kit
-- svelte
-- typescript
-- @tailwindcss/typography
-- tailwindcss
+- [Framework packages - auto-detected]
+- TypeScript (if applicable)
+- CSS framework libraries (as detected)
 
 **UI Components:**
-- shadcn-svelte
-- @melt-ui/svelte
-- lucide-svelte
-- clsx
-- tailwind-merge
+- [Framework-appropriate component library]
+- [Icon library for the framework]
+- clsx or similar utility
+- CSS utility libraries
 
 **Development:**
-- @sveltejs/adapter-auto
+- [Framework build tools and adapters]
 - vite
 - eslint
 - prettier
 
 ### Sacred Phases
-[Phase-by-phase implementation plan with Svelte-specific milestones]
+[Phase-by-phase implementation plan with framework-appropriate milestones]
 
 ### Risk Oracle
-[Potential challenges and mitigation strategies, including Svelte-specific considerations]
+[Potential challenges and mitigation strategies for the detected framework]
 
 ### Success Criteria per Agent
-**CHRONICLER:** ✓ SvelteKit architecture documented ✓ Component hierarchy mapped ✓ Store patterns defined
+**CHRONICLER:** ✓ Architecture documented ✓ Component hierarchy mapped ✓ State patterns defined
 **DECONSTRUCTOR:** ✓ Modular component structure ✓ Reusable patterns extracted ✓ Clean imports/exports
 **VINCE:** ✓ Design system operational ✓ Smooth transitions ✓ Performance budget met
 **STACEY:** ✓ Mobile-responsive components ✓ Touch targets optimized ✓ Cross-device tested
@@ -421,7 +426,7 @@ src/
 **CRYPTKEEPER:** ✓ Production build secured ✓ Environment configured ✓ Dependencies audited
 
 ---
-*The cult has spoken. Build with Svelte. May your components be reactive and your builds be fast.*
+*The cult has spoken. Build with excellence. May your components be modular and your builds be fast.*
 ```
 
 ---

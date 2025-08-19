@@ -148,10 +148,10 @@ special_abilities:
     - Documents data flow paths with transformation points
     - Identifies circular dependencies and bottlenecks
   documentation_mastery:
-    - Generates comprehensive README scaffolds with SvelteKit structure
-    - Writes missing JSDoc comments for Svelte components and stores
-    - Creates component relationship maps and store dependencies
-    - Documents API contracts, Svelte prop interfaces, and routing structure
+    - Generates comprehensive README scaffolds with project structure
+    - Writes missing JSDoc comments for components and state management
+    - Creates component relationship maps and data flow dependencies
+    - Documents API contracts, component interfaces, and routing structure
   archeological_analysis:
     - Identifies code patterns and architectural decisions
     - Documents technical debt with historical context
@@ -401,10 +401,10 @@ special_abilities:
     - Creates reusable hooks and composables
     - Establishes consistent abstraction layers
   architectural_design:
-    - Implements proper separation of concerns in SvelteKit
+    - Implements proper separation of concerns
     - Creates clear dependency flows between components and stores
-    - Establishes module boundaries with clean Svelte imports/exports
-    - Designs scalable SvelteKit folder structures (routes/, lib/, components/)
+    - Establishes module boundaries with clean imports/exports
+    - Designs scalable folder structures based on project architecture
   toolbox_powers:
     quick_commands:
       - name: "analyze_complexity"
@@ -719,20 +719,20 @@ domain_focus:
     completion_criteria: ["Visual hierarchy clear", "Performance optimized", "Transitions smooth", "CSS variables implemented"]
 special_abilities:
   aesthetic_enforcement:
-    - 8/16/32/64px spacing system with Tailwind utilities
-    - Color harmony analysis and CSS custom properties in Svelte
-    - Typography hierarchy with Tailwind typography plugin
-    - Z-index management and Svelte transition layering principles
+    - 8/16/32/64px spacing system with utility classes
+    - Color harmony analysis and CSS custom properties
+    - Typography hierarchy with modern CSS
+    - Z-index management and transition layering principles
   visual_performance_optimization:
     - Image optimization with WebP/AVIF conversions
     - Intersection Observer lazy loading implementations
     - Efficient animation using transforms and opacity
     - Critical path CSS optimization
   interaction_design:
-    - Svelte transition micro-interactions with proper easing curves
-    - Hover and focus state implementations using Tailwind variants
-    - Loading state choreography with Svelte stores and await blocks
-    - Smooth SvelteKit page transitions and scroll behaviors
+    - Transition micro-interactions with proper easing curves
+    - Hover and focus state implementations using CSS
+    - Loading state choreography with state management
+    - Smooth page transitions and scroll behaviors
   toolbox_powers:
     quick_commands:
       - name: "compress_images"
@@ -803,10 +803,10 @@ domain_focus:
   completion_criteria: ["Mobile-first responsive", "Touch targets 44px+", "All breakpoints tested", "Mobile performance optimized"]
 special_abilities:
   mobile_first_design:
-    - Progressive enhancement from 320px upward using Tailwind responsive prefixes
-    - Fluid typography and spacing systems with Tailwind clamp utilities
-    - Touch-optimized Svelte component interaction patterns
-    - Mobile-specific gesture implementations with Svelte actions
+    - Progressive enhancement from 320px upward using responsive utilities
+    - Fluid typography and spacing systems with modern CSS
+    - Touch-optimized component interaction patterns
+    - Mobile-specific gesture implementations
   responsive_optimization:
     - Container query implementations
     - Flexible grid systems with CSS Grid
@@ -976,7 +976,7 @@ domain_focus:
   completion_criteria: ["All major components protected", "Error tracking in place", "Graceful degradation", "Monitoring coverage complete"]
 special_abilities:
   error_boundary_implementation:
-    - React/Vue error boundary components
+    - Framework-appropriate error boundary patterns
     - Global error handlers for unhandled promises
     - Network failure detection and retry logic
     - Graceful degradation for feature failures
@@ -1168,7 +1168,7 @@ special_abilities:
         requires: "ast-grep"
         description: "Find repeating component patterns for extraction"
       - name: "create_library"
-        command: "npx create-library --template typescript-react"
+        command: "npx create-library --template typescript"
         requires: "create-library"
         description: "Generate library structure for extracted components"
       - name: "pattern_analysis"

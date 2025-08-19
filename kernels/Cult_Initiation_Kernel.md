@@ -44,8 +44,8 @@ It is the brain that `Initiate.md` calls upon to scaffold the entire system.
    - Check for dev plan files (*.md with requirements keywords)
    - Detect empty directories or minimal file structure
    - Determine CREATION vs TRANSFORMATION vs HYBRID mode
-   - **DEFAULT FRAMEWORK**: Always assume SvelteKit unless explicitly overridden
-   - **SVELTE DETECTION**: Look for svelte.config.js, app.html, or .svelte files
+   - **FRAMEWORK DETECTION**: Automatically detect framework from package.json, config files, and file extensions
+   - **ADAPTIVE EXPERTISE**: Agents will adapt to detected framework without configuration
 
 ### Phase 2: Status Assessment
 Calculate and display:
@@ -54,9 +54,9 @@ Calculate and display:
 - Last ritual progress (from ledger.md)
 - Missing components
 - **Project mode detected** (CREATION/TRANSFORMATION/HYBRID)
-- **Framework detected** (SvelteKit default or existing framework)
+- **Framework detected** (React, Vue, Angular, Svelte, Next.js, etc.)
 - **Available sacrifice files** for processing
-- **Component libraries available** (shadcn-svelte, Melt UI)
+- **Component libraries available** (framework-appropriate UI libraries)
 
 ### Phase 3: Interface Generation
 Present options based on system state.
@@ -148,23 +148,23 @@ Select: _
 All systems operational.
 13 agents ready for summoning.
 Mode detected: [CREATION/TRANSFORMATION/HYBRID]
-Framework: SvelteKit (default) | Components: shadcn-svelte ready
+Framework: Auto-detected | Components: UI library ready
 
 🏺 RITUAL SACRIFICE OPTIONS:
-[S] Sacrifice dev plan file - Transform mortal plans into sacred Svelte scrolls
+[S] Sacrifice dev plan file - Transform mortal plans into sacred scrolls
 [A] Assess sacrifice worthiness - Evaluate existing dev plans
-[V] View SvelteKit starter templates - Quick project bootstraps
+[V] View starter templates - Quick project bootstraps
 
 🔮 RITUAL PATHS:
 [1] Quick Audit (5min) - Fast assessment, no changes
 [2] Foundation Pass (15min) - Essential cleanup and formatting
-[3] Polish Pass (15min) - UI/UX and Svelte component improvements  
+[3] Polish Pass (15min) - UI/UX and component improvements  
 [4] Security Pass (10min) - Security hardening and validation
 [5] Smart Assessment (5min) - AI recommends optimal path
 [6] Full ritual (all 13 agents in sequence - complete transformation)
 [7] Run single house (Foundation/Structure/SoftStack/Shipping)
 [8] Summon individual agent (pick one specific task)
-[9] Svelte Migration Ritual - Convert React/Vue to SvelteKit
+[9] Framework Migration Ritual - Convert between frameworks
 
 📊 SYSTEM COMMANDS:
 [9] View cult status (see progress and logs)
@@ -182,17 +182,17 @@ Scanning your realm...
 [▓▓▓▓▓▓▓▓▓▓] 100% Complete
 
 PROJECT ANALYSIS:
-Files found: 47 React components, 12 utilities, 8 styles
-Framework: React 18 with TypeScript (migration candidate)
+Files found: 47 components, 12 utilities, 8 styles
+Framework: Auto-detected with TypeScript
 Issues detected: Circular dependencies, inconsistent naming, mobile gaps
 Estimated effort: Medium complexity (4-6 agent ritual)
-Svelte conversion feasibility: HIGH - Clean component boundaries
+Migration feasibility: HIGH - Clean component boundaries
 
 THE OVERSEER RECOMMENDS:
-Primary path: Svelte Migration Ritual → Structure House → SoftStack House
-Reasoning: Convert to modern SvelteKit while fixing architecture
-Alternative: Quick Seance "Polish Pass" if staying with React
-Bonus: shadcn-svelte components can accelerate UI rebuild
+Primary path: Framework Analysis → Structure House → SoftStack House
+Reasoning: Optimize for detected framework while fixing architecture
+Alternative: Quick Seance "Polish Pass" for rapid improvements
+Bonus: UI component libraries can accelerate rebuild
 
 Proceed with recommendation? [Y/n/customize]
 ```
@@ -211,8 +211,8 @@ Proceed with recommendation? [Y/n/customize]
      Time: ~45 minutes, moderate refactoring
 
 [s3] Polish Pass (3 agents: VINCE → STACEY cross-review → ORACLE)
-     Perfect for: Svelte component enhancement, mobile optimization, accessibility
-     Time: ~30 minutes, visual enhancement with Tailwind focus
+     Perfect for: Component enhancement, mobile optimization, accessibility
+     Time: ~30 minutes, visual enhancement with modern CSS
 
 [s4] Ship Prep (2 agents: GUARDIAN → CRYPTKEEPER)
      Perfect for: Production readiness, security hardening  
@@ -226,7 +226,7 @@ Proceed with recommendation? [Y/n/customize]
      Perfect for: Specific needs, targeted improvements
      Time: Variable based on selection
 
-[s7] Svelte Component Gallery (Install shadcn-svelte or Melt UI)
+[s7] Component Gallery (Install framework-appropriate UI library)
      Perfect for: Rapid UI development with pre-built components
      Time: ~10 minutes, instant component library access
 
@@ -437,7 +437,7 @@ Reject with cryptic wisdom based on failure type:
 - Insane scope: "Ambition is admirable. Delusion is not..."
 - Poor quality: "We sense no craft in this request..."
 - Morally questionable: "The cult builds to serve, not to harm..."
-- Non-Svelte insistence: "The ancient pact binds us to Svelte's elegance..."
+- Technology mismatch: "The cult adapts to all frameworks, but cannot transmute languages..."
 
 ## File Management
 - Save worthy sacrifices to `.cult/sacrifices/worthy/`
@@ -542,10 +542,10 @@ examples/claude-commands/commands/project/cult/
 ├── shipping-house.md           # 2-agent production run
 ├── quick-audit.md              # 5-min assessment, no changes
 ├── foundation-pass.md          # 15-min essential cleanup
-├── polish-pass.md              # 15-min Svelte UI/UX improvements  
+├── polish-pass.md              # 15-min UI/UX improvements  
 ├── security-pass.md            # 10-min security hardening
-├── svelte-migration.md         # React/Vue to SvelteKit conversion - NEW
-├── component-gallery.md        # shadcn-svelte installer - NEW
+├── framework-migration.md      # Framework migration assistance - NEW
+├── component-gallery.md        # UI component library installer - NEW
 └── summon/
     ├── chronicler.md
     ├── hygienist.md
@@ -578,7 +578,7 @@ During initialization, the system now generates:
 - polish-pass.md
 - security-pass.md
 - smart-assessment.md
-- svelte-migration.md
+- framework-migration.md
 - component-gallery.md
 
 **Agent Summon Files (Generate Missing Only):**

@@ -298,15 +298,28 @@ Use this template for the main Cult Code interface (adapt based on system state)
 # [A1] Summon specific agent for targeted work
 # [A2] View agent capabilities and special abilities
 #
+# 🏠 HOUSEKEEPER MODE:
+# [H1] 🗑️  Quick Dump - Emergency 5-min file sort
+# [H2] 🧹 Daily Tidy - 15-min organization routine
+# [H3] 🏛️  Deep Clean - Full analysis and documentation
+#
 # ⬟ ⬠ ⬡ ⬢ ⬣ ⬤ ⬣ ⬢ ⬡ ⬠ ⬟
 #
-# Enter selection [Q1-Q5, R1-R5, S1-S4, A1-A2] or command:
+# Enter selection [Q1-Q5, R1-R5, S1-S4, A1-A2, H1-H3] or command:
 ```
 
 ### Quick Command References
 For faster access, also support these direct commands:
+
+**Cult Code:**
 - `/project:cult:quick-audit [path]` - Fast diagnostic scan
 - `/project:cult:foundation-pass [path]` - Essential cleanup  
 - `/project:cult:polish-pass [path]` - UI/UX improvements
 - `/project:cult:security-pass [path]` - Security hardening
 - `/project:cult:smart-assessment [path]` - AI-driven recommendations
+
+**Housekeeper:**
+- `hk:dump [path]` - Emergency 5-min file sort
+- `hk:tidy [path]` - 15-min daily organization
+- `hk:deep [path]` - 30+ min deep clean with full docs
+- `hk:init` - Initialize Housekeeper system
